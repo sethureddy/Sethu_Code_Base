@@ -1,5 +1,5 @@
 print("what is your name?")
 
-name = input()
+name_sethu = input()
 
 print(" my name is", name)
