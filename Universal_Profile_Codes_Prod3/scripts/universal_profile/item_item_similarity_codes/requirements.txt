@@ -1,0 +1,14 @@
+gcsfs
+google-cloud-bigquery
+googleads
+pysftp
+regex
+tqdm
+lightfm
+scipy
+requests
+google-api-python-client
+google-auth
+google-auth-httplib2
+scikit-learn==0.22
+pandas==0.25.3

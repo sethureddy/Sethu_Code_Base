@@ -1,0 +1,12 @@
+pyarrow==2.0.0
+pandas==1.1.4
+numpy==1.18.5
+tqdm
+joblib==1.0.1
+xgboost==1.4.2
+python-dateutil==2.8.1
+google-cloud-bigquery
+gcsfs
+google-api-python-client
+google-auth
+google-auth-httplib2
