@@ -1,0 +1,24 @@
+OFFER_REVIEWS_DATA: "bnile-cdw-prod.o_product.offer_reviews_fact"
+PRODUCT_ORDER_FACT: "bnile-cdw-prod.dssprod_o_warehouse.product_order_fact"
+EMAIL_GUID: "bnile-cdw-prod.dssprod_o_warehouse.email_guid"
+OFFER_REVIEWS_PII: "bnile-cdw-prod.o_product.bn_reviews_pii"
+output_path: "gs://us-central1-prod-7440cabe-bucket/data/review_data_model"
+threshold: 10
+spell_correction: True
+CPU_COUNT: 20
+keyword_dict:   {"marital_words": ['wife','daughter','husband','son','child','married','granddaughter','baby','partner','motherinlaw',
+                'daughterinlaw','marriage','sisterinlaw','marry','hubby','grandchild','goddaughter','grandaughter','inlaw','honeymoon','newborn','grandson',
+                'stepdaughter','soninlaw','pregnant','wifey','brotherinlaw','grandkids','pregnancy','wifeshe','daughtershe','mother law','daughter law','first child','get married','getting married','got married','sister law',
+                'birth child','grand daughter','baby girl','new baby','birth son','first baby','celebrate birth','gave birth'],
+                "recently_engaged": ['engagement','engaged','fiance','fiancee','valentine','proposed',
+                'propose','engagment','fiancac','fiancace','dating','fianca','engaging','enagement','engangement',
+                'engagement ring','said yes','valentine day','future wife','future husband','engagment ring','engagement band','valentine gift',
+                'say yes','got engaged','asked marry','wifetobe','husbandtobe','engagement wedding','wedding engagement'],
+                 "wedding_day": ['wedding','bridesmaid','bride','maid','bridetobe','bridemaids','wedding band','wedding ring','wedding day',
+                'wedding gift','wedding present','maid honor','wedding party','wedding set','daughter wedding'],
+                 "birthday": ['birthday','bday','birthday present','birthday gift','daughter birthday','friend birthday','birthson','girlfriend birthday','mother birthday'],
+                 "anniversary": ['anniversary','anniversary band','anniversary gift','anniverdary ring','wedding anniversary'],
+                 "gender_M": ["girlfriend","wife","gf"],
+                 "gender_F": ["boyfriend","husband"],
+                 "family_flag": ["husband","wife","niece","nephew","mom","dad","mother","father","brother","sister","son","grandson","daughter","grandfather","granddaughter","grandmother","sisters","fathers","mothers","brothers","wifes","husbands","friend"]
+                }

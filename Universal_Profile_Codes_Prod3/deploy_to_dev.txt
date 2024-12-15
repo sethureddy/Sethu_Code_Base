@@ -1,0 +1,19 @@
+#deploys the current release branch to Data Engineer Dev's airflow
+#The script below can be copied and pasted into a Windows Powershell terminal;
+#not guaranteed to work on all OS's
+
+#dump all SCRIPTS  files to the scripts/universal_profile folder and DAG files to dags/ folder
+
+#Rushabh
+git checkout release
+git pull origin release
+gsutil -m cp -r /c/Users/Affine/Desktop/Affine/GCP-BlueNile/affine/Universal_Profile_Codes_Prod3/scripts/universal_profile/* gs://us-central1-dev6-0ea4b1a7-bucket/dags/scripts/universal_profile
+gsutil -m cp /c/Users/Affine/Desktop/Affine/GCP-BlueNile/affine/Universal_Profile_Codes_Prod3/dags/* gs://us-central1-dev6-0ea4b1a7-bucket/dags
+
+#generic
+git checkout release
+git pull origin release
+gsutil -m cp -r /<PATH_TO_FOLDER>/Universal_Profile_Codes_Prod3/scripts/universal_profile/* gs://us-central1-dev6-0ea4b1a7-bucket/dags/scripts/universal_profile
+gsutil -m cp /<PATH_TO_FOLDER>/Universal_Profile_Codes_Prod3/dags/* gs://us-central1-dev6-0ea4b1a7-bucket/dags
+
+
