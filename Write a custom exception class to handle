@@ -1,0 +1,12 @@
+Write a custom exception class to handle invalid operations?
+Write a python program to calculate the sum of a list using multiple threads?
+Design a python class to implement a Least Recently used (LRU) cache?
+ 
+Implement a function to find the maximum sum of contiguous sub array with time complexity O(n)?
+Input: [-2,1-3,4,-1,2,1,-5,4]
+ 
+Return all unique pairs from a list that sum to a target value with time complexity O(n)
+Input:[1,3,2,2,4,0,-1,1] target =3 
+ 
+
+ 
